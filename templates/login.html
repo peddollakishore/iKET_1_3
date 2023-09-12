@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+	      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- <title>Neumorphism Login Form UI | CodingNepal</title> -->
+      <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/style_login.css') }}">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <div id="page-wrapper-login">
+         <div class="content">
+            <div class="text">
+            iKET
+         </div>
+        <form  method="POST" action="/login">
+           <div class="field">
+              <input type="text" id="usernumber" name="usernumber" required class="usernumber-input">
+              <span class="fas fa-user"></span>
+              <label for="usernumber">Phone Number</label>
+           </div>
+           <div class="field">
+              <input type="password" id="password" name="password" required class="password-input">
+              <span class="fas fa-lock"></span>
+              <label for="password">Password</label>
+           </div>
+           <button>Log In</button>
+           <div class="sign-up">
+              Not a member?
+              <a href="/register">Register</a>
+           </div>
+        </form>
+     </div>
+   </body>
+</html>
